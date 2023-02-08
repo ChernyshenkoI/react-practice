@@ -1,6 +1,10 @@
 
-
+import PropTypes, { shape } from "prop-types";
 export const Container =(props)=>{
-    console.log(props);
+ 
     return (<div>{props.children}</div>)
+}
+
+Container.propTypes = {
+    children:PropTypes.node.isRequired
 }
